@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="website icon"  href="https://media.discordapp.net/attachments/1115999004166213665/1122928266664214608/ikonpbl.png?width=177&height=130" media="(prefers-color-scheme: dark)"/>
+  <link rel="website icon"  href="https://media.discordapp.net/attachments/1115999004166213665/1122926465781080204/ikonpbl23.png?width=154&height=103" media="(prefers-color-scheme: light)"/>
+  <title>Mini PBL - Project</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+</head>
+<script>
+  function show_hide() {
+    var x = document.getElementById("f1");
+    var y = document.getElementById("form2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none";
+    } else {
+      x.style.display = "block";
+      y.style.display = "none";
+    }
+  }
+</script>
+<body>
+
+  {% extends 'nav.html'%}{%block content%}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Project</h2>
+              <p>This is our Mini PBL project, namely the Python Port Scanner Application</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>Project</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <section>
+    <!--Main Project-->
+        <div id="f1">
+          <div class="container p-2 " data-aos="fade-up"> 
+            <div id="mainproject" class="container bg-primary p-3 ">
+              <form action="/portscan" method="POST" autocomplete="off">
+                <div class="form">
+                    <div class="form-group">
+                        <div id="fg1" class=" text-center bg-light mx-5  p-1 border border-2 border-dark">
+                            <h4 class="fw-bold pt-2">PORT SCANNER</h4>
+                        </div>
+                        <div id="d1" class="bg-dark text-light p-3 mx-auto align-center">
+                            <div class="mb-1">
+                                <div class="row p-1">
+                                    <div class="col-4">
+                                        <label id="l1"for="url" class="form-label mt-2 "><b>URL or IP Address :</b></label>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input type="text" name="url" class="form-control" id="url" value="{{url}}" placeholder="URL or IP Address" required>
+                                    </div>
+                                </div>
+                                <div id="single">
+                                  <div class="row p-1">
+                                    <div class="col-4">
+                                        <label id="l1"for="url" class="form-label mt-2 "><b>Single Port :</b></label>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <input min="0" type="number" name="single_port" class="form-control" id="url"  placeholder="Enter Port Number">
+                                    </div>
+                                  </div>
+                                </div>
+                              <div id="shownone" style="display:none; ">
+                                  <div class="row p-1">
+                                    <div class="col-4">
+                                        <label id="l1"for="url" class="form-label mt-2 "><b>Range Port :</b></label>
+                                    </div>
+                                    <div class="col-8 ">
+                                        <div class="row">
+                                          <div class="col-5">
+                                            <input min="0" type="number" name="start" class="form-control" id="url" placeholder="Start">
+                                          </div>
+                                          <div class="col-2 text-center"> 
+                                            <i class="bi bi-arrow-right" style="font-size:20pt;"></i>
+                                          </div>
+                                          <div class="col-5">
+                                            <input min="0" type="number" name="end" class="form-control" id="url" placeholder="End">
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="container pt-2">
+                                <div class="row justify-content-end">
+                                  <div class="col ">
+                                    <div class="text-end">
+                                      <a class="btn btn-primary mt-1" onclick='
+                                        var x = document.getElementById("shownone");
+                                        var y = document.getElementById("single")
+                                        if (x.style.display === "none") 
+                                        {
+                                          x.style.display = "block";
+                                          y.style.display = "none";
+
+                                        } else 
+                                        {
+                                          x.style.display = "none";
+                                          y.style.display = "block";
+                                        }
+                                      '><i class="bi bi-arrow-left-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="container w-50 ">
+                        <div class="row mt-3 mb-3">
+                            <div class="col-2"></div>
+                            <div class="col-8 ">
+                                <button type="submit" id="btn1" class="btn btn-light rounded-pill border-2 border-dark">SCAN <i id="iconsearch" class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="result1" class="bg-dark pb-3 pt-3">
+                            <h5><b>SCAN RESULT</b></h5>
+                        </div>
+                    </div>
+                    <div class="container" id="rs">
+                      <div class="container bg-light p-2" id="cth">
+                        <table class="table text-center">
+                          <thead>
+                            <tr>
+                              <th scope="col">Port</th>
+                              <th scope="col">Service</th>
+                              <th scope="col">Protocol</th>
+                              <th scope="col">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              {% for buka in open %}
+                            <tr>
+                              <th scope="row" >{{buka}}</th>
+                              <td ><b>{{info[buka]}}</b></td>
+                              <td><b>{{combine[buka]}}</b></td>
+                              <td class="text-success"><b>OPEN <i class="bi bi-check-circle-fill text-success"></i></b></td>
+                            </tr>
+                            {% endfor %}
+                            {% for tutup in closed %}
+                            <tr>
+                              <th scope="row">{{tutup}}</th>
+                              <td ><b>{{info[tutup]}}</b></td>
+                              <td><b>{{combine[tutup]}}</b></td>
+                              <td class="text-danger"><b>CLOSED <i class="bi bi-x-circle-fill text-danger"></i></b></td>
+                            </tr>
+                            {% endfor %}
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div  class="form-group mt-2">
+                        <p id="bagde"><b>Made By Team 12</b></p>
+                    </div>
+                </div>
+            </div>
+            </form>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+  {% include "foot.html" %}
+  {% endblock %}
+</body>
+<style>
+  #projectbg{
+  background-image: url("{{ url_for('static', filename='assets/img/page-header.jpg') }}");
+  }
+
+
+
+</style>
+</html>

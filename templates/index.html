@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mini PBL - Port Scanner</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+   <link rel="website icon"  href="https://media.discordapp.net/attachments/1115999004166213665/1122928266664214608/ikonpbl.png?width=177&height=130" media="(prefers-color-scheme: dark)"/>
+  <link rel="website icon"  href="https://media.discordapp.net/attachments/1115999004166213665/1122926465781080204/ikonpbl23.png?width=154&height=103" media="(prefers-color-scheme: light)"/>
+
+
+</head>
+
+<body>
+
+  <!--Navbar extends and Script links-->
+  {% extends 'nav.html'%}{%block content%}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2>Python Port Scanner Website</h2>
+          <p data-aos-delay="100">Port Scanner is a computer program used to check computer networks and look for open ports on a system. Port is an entry point for data flow that occurs between two systems. This web application is made with python flask, html, css and javascript. </p>
+
+          <div class="row gy-4" >
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                <p>UI/UX (%)</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Algorithm (%)</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Members</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Semester</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{{ url_for('static', filename='assets/img/op.png')}}" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-code"></i></div>
+            <div>
+              <h4 class="title">Python Based</h4>
+              <p class="description">The website application algoritm is builded with python flask, which is a python website framework.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-mobile"></i></div>
+            <div>
+              <h4 class="title">Responsive UI/UX</h4>
+              <p class="description">The interface design on the website is responsive, so it can run well on various devices that have different resolutions.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-network-wired"></i></div>
+            <div>
+              <h4 class="title">Port Scanning</h4>
+              <p class="description">Have ability to perform port scanning to see open and closed ports on a website.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action" style="background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v1016-c-08_1-ksh6mza3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f584d8501c27c5f649bc2cfce50705c0');">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Mini PBL</h3>
+            <p> Mini Problem-based learning is a student-centered pedagogy in which students learn about a subject through the experience of solving an open-ended problem found in trigger material.</p>
+            <a class="cta-btn" href="/about">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item">
+
+          <div class="col-md-5">
+            <img src="https://i0.wp.com/hackersonlineclub.com/wp-content/uploads/2020/03/Port-Scanning.png?resize=750%2C441&ssl=1" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>The Benefits of our Mini PBL Project</h3>
+            <p class="fst-italic">
+              Our website application project has several advantages, These are the advantages of our python port scanner website : 
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Responsive User Interface Design.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Fast & Accurate Port Scanning.</li>
+              <li><i class="bi bi-check-circle-fill text-primary"></i> Free to Access for All Users.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="https://www.chieflearningofficer.com/wp-content/uploads/2016/10/CO_1016_Feature1_760x456.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>The Purpose of our Mini PBL Project</h3>
+            <p>
+              Our mini PBL project is intended to make it easier for people to check open and closed ports on a website. 
+              This project is also expected to be able to add insight about port scanners to its users.
+            </p>
+            <a href="/about" class="btn btn-primary">Learn More</a>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <span>Frequently Asked Questions</span>
+          <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Does an open port on a website has a dangerous potential?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Open ports become dangerous when legitimate services are exploited through security vulnerabilities or malicious services are introduced to a system via malware or social engineering, cybercriminals can use these services in conjunction with open ports to gain unauthorized access to sensitive data.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    What is Python Flask Framework?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Flask is a micro web framework written in Python. It is classified as a microframework because it does not require particular tools or libraries. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Whether this application can be used for dangerous things?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    No, It can not.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    How do this website can perform Port Scanning?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    This Project uses socket.getbyhostname module to convert url into ip address, then using socket to scans open ports and closed ports, and then return the value to result box.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Is it fine to use this port scanner to scan other website without permission ?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Yes, port scans proactively to detect and close all possible vulnerabilities that attackers might exploit
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+  
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  {% include "foot.html" %}
+  {% endblock %}
+  <div id="preloader"></div>
+
+</body>
+<style>
+
+</style>
+</html>
